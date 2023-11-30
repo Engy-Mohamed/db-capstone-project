@@ -4,10 +4,13 @@ use littlelemondb;
 # Insert query to populate "Menu" table:
 #*******************************************************#
 */
-delete from Orders where OrderID < 6;
-delete from Bookings where BookingID < 7;
+delete from contactdetails where ContactDetailID < 6;
+delete from Orders where OrderID < 10;
+delete from Bookings where BookingID < 8;
 delete from MenuItems where ItemID < 19;
 delete from Menus where MenuID < 6;
+delete from CustomerDetails where CustomerDetailsID < 7;
+delete from staffinformation where StaffID < 07;
 INSERT INTO Menus (MenuID,Name,Cuisine)
 VALUES
 (1,'Moussaka','Greek'),
@@ -45,7 +48,7 @@ VALUES
 #*******************************************************#
 # Insert query to populate "CustomerDetails" table:
 #*******************************************************#
-delete from CustomerDetails where CustomerDetailsID < 7;
+
 INSERT INTO CustomerDetails (CustomerDetailsID,FullName)
 VALUES
 (1, 'Vanessa McCarthy' ),
@@ -58,7 +61,7 @@ VALUES
 #*******************************************************#
 # Insert query to populate "staffinformation" table:
 #*******************************************************#
-delete from staffinformation where StaffID < 07;
+
 INSERT INTO staffinformation (StaffID, FullName, Role,Salary)
 VALUES
 (01,'Mario Gollini','Manager',70000),
@@ -92,6 +95,18 @@ VALUES
 (3, 15, 2, 3, 2, 150),
 (4, 5, 3, 4, 1, 40),
 (5, 8, 1, 5, 1, 110);
+
+#*******************************************************#
+# Insert query to populate "Orders" table:
+#*******************************************************#
+
+INSERT INTO contactdetails (ContactDetailID, ContactNumber, CustomerDetailsID)
+VALUES
+(1, '34558879', 1),
+(2,  '34888879', 2),
+(3,  '22558879', 3),
+(4,  '34000079', 4),
+(5,  '333558879', 5);
 
 
 
