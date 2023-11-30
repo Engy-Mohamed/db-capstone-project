@@ -1,0 +1,3 @@
+CustomerDetailsID,FullName,OrderID,TotalCost,MenuName,CourseName,StarterName
+1,"Vanessa McCarthy",1,250.00,Moussaka,"Greek salad",Olives
+2,"Marcos Romero",2,200.00,Aperitivo,Pizza,Minestrone
